@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.form {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0d1527;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+}
+
+.form h1 {
+    font-size: 45px;
+    transform: translateX(-200px) translateY(-330px);
+}
+
+form h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+form input {
+    font-size: 20px;
+    padding: 5px;
+    width: 310px;
+    color: white;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-color: rgb(55, 119, 192);
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+i {
+    border: 1px solid rgb(55, 119, 192);
+    padding: 5px 8px;
+    transform: translateY(0px) translateX(12px);
+}
+
+form button {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    width: 330px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.041);
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 3px solid rgba(255, 255, 255, 0.74);
+
+}
+
+#check {
+    transform: translateX(-145px) translateY(10px) scale(1.5);
+    font-size: 20px;
+}
+
+.checkbox h4 {
+    transform: translate(35px, -17px);
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    width: fit-content;
+    text-align: start;
+
+}
+
+.form button:hover {
+    border-color: rgb(55, 119, 192);
+}
+
+label {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+#forget {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#forget:hover {
+    font-size: 22px;
+}
+
+form p {
+    font-size: 20px;
+    color: white;
+    margin: 10px 10px;
+}
+
+a {
+    color: rgb(158, 214, 248);
+}
+
+a:hover {
+    font-size: 22px;
+}
+
+.left {
+    position: relative;
+    overflow: hidden;
+    animation-name: left;
+    animation-duration: 100s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform: translateY(-150px) translateX(-50px);
+}
+
+.right {
+    position: relative;
+    overflow: hidden;
+    animation-name: right;
+    animation-duration: 100s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transform: translateX(-150px) translateY(110px);
+}
+
+@keyframes left {
+    0% {
+        transform: translate(-250px, -200px);
+    }
+
+    10% {
+        transform: translate(-30px, -130px);
+    }
+
+    20% {
+        transform: translate(-500px, -50px);
+    }
+
+    30% {
+        transform: translate(-30px, -10px);
+    }
+
+    40% {
+        transform: translate(-500px, 20px);
+    }
+
+    50% {
+        transform: translate(-30px, 90px);
+    }
+
+    60% {
+        transform: translate(-500px, 130px);
+    }
+
+    70% {
+        transform: translate(-30px, 160px);
+    }
+
+    80% {
+        transform: translate(-500px, 200px);
+    }
+
+    90% {
+        transform: translate(-30px, 220px);
+    }
+
+    100% {
+        transform: translate(-500px, 260px);
+    }
+
+
+}
+
+@keyframes right {
+    0% {
+        transform: translate(250px, -200px);
+    }
+
+    10% {
+        transform: translate(-40px, -130px);
+    }
+
+    20% {
+        transform: translate(300px, -50px);
+    }
+
+    30% {
+        transform: translate(-40px, -10px);
+    }
+
+    40% {
+        transform: translate(300px, 20px);
+    }
+
+    50% {
+        transform: translate(-40px, 90px);
+    }
+
+    60% {
+        transform: translate(300px, 130px);
+    }
+
+    70% {
+        transform: translate(-40px, 160px);
+    }
+
+    80% {
+        transform: translate(300px, 200px);
+    }
+
+    90% {
+        transform: translate(-40px, 220px);
+    }
+
+    100% {
+        transform: translate(300px, 260px);
+    }
+
+}
