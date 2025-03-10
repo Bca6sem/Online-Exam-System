@@ -134,11 +134,11 @@ li a {
 .hero {
     width: 100%;
 
-    height: auto;
+    height: 500px;
     display: grid;
     grid-template-columns: auto auto;
     background-color: #0d1527;
-    justify-content: space-evenly;
+
 }
 
 .imagehero {
@@ -213,11 +213,12 @@ h2 {
     transform: translateX(-80px);
 
 }
-.imagehero{
-    position: absolute;
-    z-index: 1;
-   
-   
+
+.imagehero {
+
+    z-index: 2;
+
+
 }
 
 .image3 {
@@ -250,7 +251,7 @@ h2 {
 
     100% {
 
-       transform:translate3d(-50px, 50px, 20px);
+        transform: translate3d(-50px, 50px, 20px);
     }
 }
 
@@ -300,7 +301,7 @@ h2 {
 }
 
 .seccontent {
-    background-image: url(photos/p20.svg);
+    background-image: url(photos/p5.svg);
     background-clip: cover;
 }
 
@@ -487,6 +488,7 @@ h2 {
 
 .topsec4 {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -562,6 +564,7 @@ h2 {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     background-color: #0d1527;
     justify-content: space-between;
 }
