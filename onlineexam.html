@@ -22,16 +22,6 @@
             <a href="Login.html"><i class="fa fa-key icons" aria-hidden="true"> Login</i></a>
 
         </div>
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Navbar Example</title>
-            <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS -->
-        </head>
-        <body>
-        
         <nav>
             <div class="navdiv">
                 <div class="logo">
@@ -41,61 +31,57 @@
                     <ul class="head">
                         <li class="heading">How It Work
                             <ul class="navbar-content">
-                                <div class="contents">
-                                    <li><a href='Platform-How-it-Work.html'>Product Overview</a></li>
-                                    <li><a href='tools.html'>Tools</a></li>
-                                    <li><a href='Technology.html'>Technology</a></li>
-                                </div>
+                               <div class="contents">
+                                <li><a href='Platform-How-it-Work.html'>Product Overview</a></li>
+                                <li><a href='tools.html'>Tools</a></li>
+                                <li><a href='Technology.html'>Technology</a></li>
+                               </div>
                             </ul>
                         </li>
                         <li class="heading">Online Examination
                             <ul class="navbar-content">
                                 <div class="contents">
                                     <h6>Talent Assessments</h6>
-                                    <p>Assess your talent holistically</p>
-                                    <li><a href='#'>Psychometric tests</a></li>
-                                    <li><a href='#'>Behavioral tests</a></li>
-                                    <li><a href='#'>Aptitude tests</a></li>
-                                    <li><a href='#'>Technical tests</a></li>
-                                    <li><a href='#'>Communication skills tests</a></li>
+                                <p>Assess your talent holistically</p>
+                                <li><a href='#'>Psychometric tests</a></li>
+                                <li><a href='#'>Behavioral tests</a></li>
+                                <li><a href='#'>Aptitude tests</a></li>
+                                <li><a href='#'>Technical tests</a></li>
+                                <li><a href='#'>Communication skills tests</a></li>
                                 </div>  
                             </ul>
                         </li>
                         <li class="heading">Customer
                             <ul class="navbar-content">   
-                                <div class="contents">
-                                    <h6>Who We Serve</h6>
-                                    <li><a href='#'>Schools</a></li>
-                                    <li><a href='#'>Higher Education</a></li>
-                                    <li><a href='#'>Companies & Organisations</a></li>
-                                </div>
+                               <div class="contents">
+                                <h6>Who We Serve</h6>
+                                <li><a href='#'>Schools</a></li>
+                                <li><a href='#'>Higher Education</a></li>
+                                <li><a href='#'>Companies & Organisations</a></li>
+                               </div>
                             </ul>
                         </li>
                         <li class="heading">Resource
                             <ul class="navbar-content">
                                 <div class="contents">
-                                    <li><a href='#'>Privacy center</a></li>
-                                    <li><a href='#'>Blog</a></li>
-                                    <li><a href='#'>Training videos</a></li>
-                                    <li><a href='#'>Webinars</a></li>
-                                    <li><a href='#'>About</a></li>
-                                    <li><a href='#'>Support</a></li>
+                                <li><a href='#'>Privacy center</a></li>
+                                <li><a href='#'>Blog</a></li>
+                                <li><a href='#'>Training videos</a></li>
+                                <li><a href='#'>Webinars</a></li>
+                                <li><a href='#'>About</a></li>
+                                <li><a href='#'>Support</a></li>
                                 </div>
                             </ul>
                         </li>
+
                     </ul>
                 </div>
                 <div class="action">
-                    <img src="Photos/hamburger.png" alt="Hamburger" class="hamburger-icon">
-                    <button>Request a Demo</button>
+                    <img src="Photos/hamburger.png" alt="Hamburger">
+                <button>Request a Demo</button>
                 </div>
             </div>
         </nav>
-        
-        <script src="scripts.js"></script> <!-- Link to the JavaScript -->
-        </body>
-        </html>
-        
             <div class="hero">
                 <div class="content"> 
     
@@ -112,7 +98,7 @@
                     <img src="photos/p3.png" class="image" width="200px">
                 </div>
                 <div class="image1">
-                    <img src="photos/p1.png" class="imagehero" width="950px">
+                    <img src="photos/p1.png" class="imagehero" >
                     <img src="photos/p3.png" class="image3" width="200px">
                 </div>
             </div>
@@ -373,19 +359,14 @@
         </div>
     </footer>
     <script>
-// Select the hamburger icon and the navbar
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const navbar = document.querySelector('.navbar');
-
-// Add event listener for hamburger icon click
-hamburgerIcon.addEventListener('click', function() {
-    // Toggle the 'active' class on the navbar to show or hide it
-    navbar.classList.toggle('active');
-});
-;
-
-
+        const hamburger = document.querySelector('.action img');
+        const navbar = document.querySelector('.navbar');
+    
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
     </script>
+    
 </body>
 
 </html>
