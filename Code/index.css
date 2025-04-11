@@ -1,0 +1,56 @@
+/* Close button */
+.close-btn {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide the full navbar by default */
+    }
+
+    .hamburger {
+        display: block; /* Display the hamburger menu */
+    }
+
+    .navbar-content {
+        width: 100%;
+        position: static;
+        display: none;
+        background-color: rgba(55, 119, 192);
+    }
+
+    .navbar-content li {
+        padding: 15px;
+    }
+
+    .navbar-content a:hover {
+        color: rgb(0, 18, 24);
+    }
+
+    .heading {
+        padding-right: 0;
+        font-size: 18px;
+    }
+
+    /* When the hamburger is clicked, display the navbar content */
+    .navbar.active .navbar-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Show the close button when the navbar is active */
+    .navbar.active + .close-btn {
+        display: block;
+    }
+}

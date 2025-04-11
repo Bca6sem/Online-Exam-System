@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+    <div class="navdiv">
+        <div class="logo">
+            <h1>DIGIEXAM</h1>
+        </div>
+        <div class="navbar">
+            <ul class="head">
+                <li class="heading">How It Work
+                    <ul class="navbar-content">
+                        <div class="contents">
+                            <li><a href='Platform-How-it-Work.html'>Product Overview</a></li>
+                            <li><a href='tools.html'>Tools</a></li>
+                            <li><a href='Technology.html'>Technology</a></li>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="heading">Online Examination
+                    <ul class="navbar-content">
+                        <div class="contents">
+                            <h6>Talent Assessments</h6>
+                            <p>Assess your talent holistically</p>
+                            <li><a href='#'>Psychometric tests</a></li>
+                            <li><a href='#'>Behavioral tests</a></li>
+                            <li><a href='#'>Aptitude tests</a></li>
+                            <li><a href='#'>Technical tests</a></li>
+                            <li><a href='#'>Communication skills tests</a></li>
+                        </div>
+                        <div class="contents">
+                            <h6>Coding Assessment</h6>
+                            <p>Find the best coders effectively</p>
+                            <li><a href='#'>Coding Skills test</a></li>
+                            <li><a href='#'>Advanced coding simulator</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="heading">Customer
+                    <ul class="navbar-content">
+                        <div class="contents">
+                            <h6>Customer stories</h6>
+                            <li><a href='#'>Case Studies</a></li>
+                            <li><a href='#'>Testimonials</a></li>
+                        </div>
+                        <div class="contents">
+                            <h6>Who We Serve</h6>
+                            <li><a href='#'>Schools</a></li>
+                            <li><a href='#'>Higher Education</a></li>
+                            <li><a href='#'>Companies & Organisations</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="heading">Resource
+                    <ul class="navbar-content">
+                        <div class="contents">
+                            <li><a href='#'>Privacy center</a></li>
+                            <li><a href='#'>Blog</a></li>
+                            <li><a href='#'>Training videos</a></li>
+                            <li><a href='#'>Webinars</a></li>
+                            <li><a href='#'>About</a></li>
+                            <li><a href='#'>Support</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="hamburger">
+            <img src="hamburger.png" alt="Hamburger Menu">
+        </div>
+
+        <!-- Close button inside the mobile menu -->
+        <div class="close-btn">
+            <img src="close.png" alt="Close Menu">
+        </div>
+
+        <button>Request a Demo</button>
+    </div>
+</nav>
+<script>
+  // Toggle navbar visibility when hamburger menu is clicked
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('active');
+    document.querySelector('.close-btn').style.display = 'block'; // Show the close button
+});
+
+// Close navbar when the close button is clicked
+document.querySelector('.close-btn').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.remove('active');
+    document.querySelector('.close-btn').style.display = 'none'; // Hide the close button
+});
+
+</script>
+</body>
+</html>
